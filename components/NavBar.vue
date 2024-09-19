@@ -1,33 +1,25 @@
 <template>
   <nav class="navbar" ref="navbar">
-    <div class="container">
-      <div class="logo">
-        <nuxt-link to="/">MyApp</nuxt-link>
-      </div>
-      <ul class="nav-links">
-        <li class="nav-item" :class="{ active: activeSection === 'home' }">
-          <nuxt-link to="/home" @click="changeSection('home')">Home</nuxt-link>
-        </li>
-        <li
-          class="nav-item"
-          :class="{ active: activeSection === 'experience' }"
+    <ul class="nav-links">
+      <li class="nav-item" :class="{ active: activeSection === 'home' }">
+        <nuxt-link to="/home" @click="changeSection('home')">Home</nuxt-link>
+      </li>
+      <li class="nav-item" :class="{ active: activeSection === 'experience' }">
+        <nuxt-link to="/experience" @click="changeSection('experience')"
+          >Experience</nuxt-link
         >
-          <nuxt-link to="/experience" @click="changeSection('experience')"
-            >Experience</nuxt-link
-          >
-        </li>
-        <li class="nav-item" :class="{ active: activeSection === 'skills' }">
-          <nuxt-link to="/skills" @click="changeSection('skills')"
-            >Skills</nuxt-link
-          >
-        </li>
-        <li class="nav-item" :class="{ active: activeSection === 'contact' }">
-          <nuxt-link to="/contact" @click="changeSection('contact')"
-            >Contact</nuxt-link
-          >
-        </li>
-      </ul>
-    </div>
+      </li>
+      <li class="nav-item" :class="{ active: activeSection === 'skills' }">
+        <nuxt-link to="/skills" @click="changeSection('skills')"
+          >Skills</nuxt-link
+        >
+      </li>
+      <li class="nav-item" :class="{ active: activeSection === 'contact' }">
+        <nuxt-link to="/contact" @click="changeSection('contact')"
+          >Contact</nuxt-link
+        >
+      </li>
+    </ul>
   </nav>
 </template>
 
@@ -54,7 +46,7 @@ export default {
 <style scoped>
 /* Navbar container */
 .navbar {
-  background-color: #5f5d9c;
+  background-color: #00dc82;
   padding: 1rem;
   position: fixed;
   top: 0;
@@ -68,28 +60,13 @@ export default {
   transform: translateY(0);
 }
 
-/* Logo section */
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-}
-
-/* Flex container */
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 /* Navigation links */
 .nav-links {
   display: flex;
   gap: 2rem;
   list-style: none;
   margin: 0;
+  justify-content: space-evenly;
 }
 
 .nav-item {
@@ -98,20 +75,23 @@ export default {
 }
 
 .nav-item a {
-  color: white;
+  color: #0f172a;
   text-decoration: none;
   padding: 0.5rem;
 }
 
 .nav-item a:hover {
-  color: #ddd;
+  color: #0f172a;
 }
 
 /* Mobile responsive */
 @media (max-width: 768px) {
   .nav-links {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  .nav-item {
+    font-size: 1rem;
   }
 }
 </style>
