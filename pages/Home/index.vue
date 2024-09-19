@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  layout: "default",
   data() {
     return {
       fullName: "Akkala Sai Mukesh Kumar",
