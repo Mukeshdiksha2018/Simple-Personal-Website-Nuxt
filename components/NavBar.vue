@@ -4,6 +4,11 @@
       <li class="nav-item" :class="{ active: activeSection === 'home' }">
         <nuxt-link to="/home" @click="changeSection('home')">Home</nuxt-link>
       </li>
+      <li class="nav-item" :class="{ active: activeSection === 'home' }">
+        <nuxt-link to="/education" @click="changeSection('home')"
+          >Education</nuxt-link
+        >
+      </li>
       <li class="nav-item" :class="{ active: activeSection === 'experience' }">
         <nuxt-link to="/experience" @click="changeSection('experience')"
           >Experience</nuxt-link
@@ -47,7 +52,7 @@ export default {
 /* Navbar container */
 .navbar {
   background-color: #00dc82;
-  padding: 1rem;
+  padding: 1rem 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -67,6 +72,7 @@ export default {
   list-style: none;
   margin: 0;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .nav-item {
@@ -81,7 +87,15 @@ export default {
 }
 
 .nav-item a:hover {
-  color: #0f172a;
+  color: #ffffff;
+  background-color: #0f172a;
+  border-radius: 20px;
+}
+
+.nav-item a:active {
+  color: #ffffff;
+  background-color: #0f172a;
+  border-radius: 20px;
 }
 
 /* Mobile responsive */
