@@ -2,7 +2,7 @@
   <div class="home-page">
     <h1>{{ fullName }}</h1>
     <p>{{ profession }}</p>
-    <p>Skilled in: Vue 2, Vue 3, React, Node, JavaScript</p>
+    <p>Skilled in: Vue 2, Vue 3, Nuxt 2, Nuxt 3, Node, JavaScript</p>
   </div>
 </template>
 
