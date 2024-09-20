@@ -5,13 +5,7 @@
         <nuxt-link to="/about">About</nuxt-link>
       </li>
       <li class="nav-item" :class="{ active: activeSection === 'experience' }">
-        <nuxt-link to="/experience">Experience</nuxt-link>
-      </li>
-      <li class="nav-item" :class="{ active: activeSection === 'skills' }">
-        <nuxt-link to="/skills">Skills</nuxt-link>
-      </li>
-      <li class="nav-item" :class="{ active: activeSection === 'home' }">
-        <nuxt-link to="/education">Education</nuxt-link>
+        <nuxt-link to="/experience">Experience/Education/Skills</nuxt-link>
       </li>
       <li class="nav-item" :class="{ active: activeSection === 'contact' }">
         <nuxt-link to="/contact">Contact</nuxt-link>
