@@ -1,8 +1,13 @@
 <template>
-  <div class="home-page">
-    <h1>{{ fullName }}</h1>
-    <p>{{ profession }}</p>
-    <p>Skilled in: Vue 2, Vue 3, Nuxt 2, Nuxt 3, Node, JavaScript</p>
+  <div class="main-container">
+    <div class="home-page">
+      <h1>{{ fullName }}</h1>
+      <p>{{ profession }}</p>
+      <p>Skilled in: Vue 2, Vue 3, Nuxt 2, Nuxt 3, Node, JavaScript</p>
+    </div>
+    <div>
+      <img class="image" src="~/assets/images/mukeshphoto.jpg" />
+    </div>
   </div>
 </template>
 
@@ -54,5 +59,18 @@ export default {
 
 .contact-icons a:hover i {
   color: #007bff;
+}
+
+.image {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
 }
 </style>

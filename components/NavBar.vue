@@ -2,12 +2,7 @@
   <nav class="navbar" ref="navbar">
     <ul class="nav-links">
       <li class="nav-item" :class="{ active: activeSection === 'home' }">
-        <nuxt-link to="/home" @click="changeSection('home')">Home</nuxt-link>
-      </li>
-      <li class="nav-item" :class="{ active: activeSection === 'home' }">
-        <nuxt-link to="/education" @click="changeSection('home')"
-          >Education</nuxt-link
-        >
+        <nuxt-link to="/about" @click="changeSection('home')">About</nuxt-link>
       </li>
       <li class="nav-item" :class="{ active: activeSection === 'experience' }">
         <nuxt-link to="/experience" @click="changeSection('experience')"
@@ -17,6 +12,11 @@
       <li class="nav-item" :class="{ active: activeSection === 'skills' }">
         <nuxt-link to="/skills" @click="changeSection('skills')"
           >Skills</nuxt-link
+        >
+      </li>
+      <li class="nav-item" :class="{ active: activeSection === 'home' }">
+        <nuxt-link to="/education" @click="changeSection('home')"
+          >Education</nuxt-link
         >
       </li>
       <li class="nav-item" :class="{ active: activeSection === 'contact' }">
