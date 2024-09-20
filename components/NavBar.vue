@@ -2,27 +2,22 @@
   <nav class="navbar" ref="navbar">
     <ul class="nav-links">
       <li class="nav-item" :class="{ active: activeSection === 'home' }">
-        <nuxt-link to="/about" @click="changeSection('home')">About</nuxt-link>
+        <nuxt-link to="/about">About</nuxt-link>
       </li>
       <li class="nav-item" :class="{ active: activeSection === 'experience' }">
-        <nuxt-link to="/experience" @click="changeSection('experience')"
-          >Experience</nuxt-link
-        >
+        <nuxt-link to="/experience">Experience</nuxt-link>
       </li>
       <li class="nav-item" :class="{ active: activeSection === 'skills' }">
-        <nuxt-link to="/skills" @click="changeSection('skills')"
-          >Skills</nuxt-link
-        >
+        <nuxt-link to="/skills">Skills</nuxt-link>
       </li>
       <li class="nav-item" :class="{ active: activeSection === 'home' }">
-        <nuxt-link to="/education" @click="changeSection('home')"
-          >Education</nuxt-link
-        >
+        <nuxt-link to="/education">Education</nuxt-link>
       </li>
       <li class="nav-item" :class="{ active: activeSection === 'contact' }">
-        <nuxt-link to="/contact" @click="changeSection('contact')"
-          >Contact</nuxt-link
-        >
+        <nuxt-link to="/contact">Contact</nuxt-link>
+      </li>
+      <li class="nav-item" :class="{ active: activeSection === 'contact' }">
+        <nuxt-link to="/blog">Blog</nuxt-link>
       </li>
     </ul>
   </nav>
@@ -40,11 +35,7 @@ export default {
       this.$refs.navbar.classList.add("slide-down");
     }, 100);
   },
-  methods: {
-    changeSection(section) {
-      this.activeSection = section;
-    },
-  },
+  methods: {},
 };
 </script>
 
