@@ -3,7 +3,10 @@
     <div class="home-page">
       <h1>{{ fullName }}</h1>
       <p>{{ profession }}</p>
-      <p>Skilled in: Vue 2, Vue 3, Nuxt 2, Nuxt 3, Node, JavaScript</p>
+      <span class="introduction">
+        <h2>Skilled in:</h2>
+        <p>Vue 2, Vue 3, Nuxt 2, Nuxt 3, Node, JavaScript, Typescript</p>
+      </span>
     </div>
     <div>
       <img class="image" src="~/assets/images/mukeshphoto.jpg" />
@@ -71,6 +74,12 @@ export default {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 70vh;
+  height: 90vh;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 </style>

@@ -1,5 +1,5 @@
 body {
-  font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif; /* Clean and modern fonts */
+  font-family: Public Sans, "Public Sans Fallback: Arial", ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-size: 16px; /* Standard size for readability */
   line-height: 1.6; /* Increase line-height for better readability */
   word-spacing: 0.1em; /* Adds slight space between words */
@@ -11,7 +11,6 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -21,8 +20,13 @@ h6 {
   color: #ffffff; /* Slightly darker than body text */
 }
 
+h2 {
+  color: #00dc82;
+}
+
 p {
-  margin-bottom: 1.5rem; /* Adds space between paragraphs */
+  margin-bottom: 1rem; /* Adds space between paragraphs */
+  margin-left: 1rem;
 }
 
 a {
@@ -35,7 +39,7 @@ a:hover {
 }
 
 code {
-  font-family: "Source Code Pro", "Courier New", monospace; /* Clean, modern monospace font for code */
+  font-family: Public Sans, "Public Sans Fallback: Arial", ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   background-color: #f1f1f1; /* Light grey background for code blocks */
   padding: 2px 4px;
   border-radius: 4px;
