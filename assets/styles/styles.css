@@ -5,28 +5,26 @@ body {
   word-spacing: 0.1em; /* Adds slight space between words */
   letter-spacing: 0.5px; /* Gentle letter spacing */
   color: #cbd5e1; /* Dark grey text for better contrast */
-  background-color: #0f172a; /* Light grey background for a soft look */
+  background-color: #F5F5F5; /* Light grey background for a soft look */
   margin: 0;
   padding: 0;
 }
 
 h1,
 h3,
+h2,
 h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif; /* Stylish font for headers */
   margin-bottom: 1.2rem; /* Space between header and content */
-  color: #ffffff; /* Slightly darker than body text */
-}
-
-h2 {
-  color: #00dc82;
+  color: #424242; /* Slightly darker than body text */
 }
 
 p {
   margin-bottom: 1rem; /* Adds space between paragraphs */
   margin-left: 1rem;
+  color: #424242;
 }
 
 a {
@@ -53,4 +51,10 @@ pre {
   font-size: 0.95em; /* Slightly smaller font */
   overflow-x: auto;
   border-radius: 8px;
+}
+
+.el-button--primary {
+  color: #FFF;
+  background-color: #48CFCB;
+  border-color: #48CFCB;
 }

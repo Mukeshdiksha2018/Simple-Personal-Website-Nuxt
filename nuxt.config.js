@@ -35,9 +35,10 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
-
+  modules: ['@nuxtjs/axios'],
+  axios: {
+    baseURL: 'https://nuxt-portfolio-blog-default-rtdb.firebaseio.com/', // base URL for Firebase
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
