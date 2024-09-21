@@ -1,5 +1,11 @@
 <template>
   <div>
+    <el-button
+      @click="$router.push({ path: '/AddNewPost/' })"
+      type="primary"
+      size="large"
+      >Add New Post</el-button
+    >
     <PostPreview />
   </div>
 </template>

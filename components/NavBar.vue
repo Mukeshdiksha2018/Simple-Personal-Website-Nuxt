@@ -1,17 +1,20 @@
 <template>
   <nav class="navbar" ref="navbar">
     <ul class="nav-links">
-      <li class="nav-item" :class="{ active: activeSection === 'home' }">
+      <li class="nav-item">
         <nuxt-link to="/about">About</nuxt-link>
       </li>
-      <li class="nav-item" :class="{ active: activeSection === 'experience' }">
+      <li class="nav-item">
         <nuxt-link to="/experience">Experience/Education/Skills</nuxt-link>
       </li>
-      <li class="nav-item" :class="{ active: activeSection === 'contact' }">
+      <li class="nav-item">
         <nuxt-link to="/contact">Contact</nuxt-link>
       </li>
-      <li class="nav-item" :class="{ active: activeSection === 'contact' }">
+      <li class="nav-item">
         <nuxt-link to="/blog">Blog</nuxt-link>
+      </li>
+      <li class="nav-item">
+        <nuxt-link to="/Admin">Admin</nuxt-link>
       </li>
     </ul>
   </nav>
@@ -36,7 +39,7 @@ export default {
 <style scoped>
 /* Navbar container */
 .navbar {
-  background-color: #00dc82;
+  background-color: #229799;
   padding: 1rem 0;
   position: fixed;
   top: 0;
@@ -78,6 +81,12 @@ export default {
 }
 
 .nav-item a:active {
+  color: #ffffff;
+  background-color: #0f172a;
+  border-radius: 20px;
+}
+
+.nav-item a.nuxt-link-active {
   color: #ffffff;
   background-color: #0f172a;
   border-radius: 20px;

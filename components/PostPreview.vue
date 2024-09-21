@@ -25,16 +25,8 @@ export default {
       type: String,
       required: true,
     },
-    readMoreLink: {
-      type: String,
-      required: true,
-    },
   },
-  mounted() {
-    (this.title = "Mukesh"),
-      (this.description =
-        "A quiet village nestled in the heart of rolling hills, surrounded by lush forests and winding rivers. The sun rises gently over the horizon, casting a golden glow across the landscape, while birds sing their morning song. The air is fresh, filled with the scent of pine and blooming flowers. Wooden cottages with thatched roofs dot the countryside, their chimneys puffing soft plumes of smoke. Villagers go about their daily routines, tending to gardens, herding animals, and preparing for the day ahead. A sense of peace and timelessness pervades the scene, offering a glimpse into a simpler way of life.");
-  },
+  mounted() {},
 };
 </script>
 
@@ -45,7 +37,7 @@ export default {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: whitesmoke;
+  background-color: white;
   transition: transform 0.3s ease;
 }
 .blog-preview-card:hover {
