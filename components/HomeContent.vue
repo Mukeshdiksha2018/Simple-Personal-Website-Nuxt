@@ -13,14 +13,14 @@
         <img class="image" src="~/assets/images/mukeshphoto.jpg" />
       </div>
     </div>
-    <div>
+    <div class="about-me">
       <h2>About me:</h2>
       <p>
         I am a passionate Vue.js and Nuxt.js developer with over three years of
         experience, specializing in building intuitive web applications. Since
         2021, I’ve been deeply involved in developing a no-code and document
         signing platform, driving innovation in simplifying workflows and
-        enhancing user experiences
+        enhancing user experiences.
       </p>
       <p>
         I leverage powerful libraries such as Vuex for state management, Vue
@@ -59,52 +59,47 @@ export default {
 
 .profile-image {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
   object-fit: cover;
-  margin: 10px auto;
-}
-
-.contact-icons {
-  margin-top: 20px;
-  font-size: 24px;
-}
-
-.contact-icons img {
-  width: 75px;
-  height: 75px;
-}
-
-.contact-icons a {
-  margin: 0 10px;
-  color: #333;
-  text-decoration: none;
-}
-
-.contact-icons i {
-  transition: color 0.3s;
-}
-
-.contact-icons a:hover i {
-  color: #007bff;
 }
 
 .image {
-  height: 20rem;
-  width: 20rem;
+  height: 16rem;
+  width: 16rem;
   border-radius: 50px;
+  margin: 0 auto;
 }
 
 .main-container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: auto;
 }
 
-.introduction {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.about-me {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+  }
+
+  .image {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .home-page {
+    text-align: left;
+  }
+
+  .about-me {
+    padding: 40px;
+  }
 }
 </style>
