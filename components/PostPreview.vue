@@ -7,38 +7,41 @@
     >
       <div class="blog-content">
         <h2 class="blog-title">{{ post.title }}</h2>
-        <p class="blog-description">{{ post.description }}</p>
         <p class="blog-author"><strong>Author:</strong> {{ post.author }}</p>
-        <p class="blog-body">{{ post.body }}</p>
+        <p class="blog-description">
+          <strong>Description:</strong>
+          {{ truncateText(post.description, 50) }}
+        </p>
+        <p class="blog-body">{{ truncateText(post.body, 100) }}</p>
+        <span>
+          <el-button size="mini" type="primary">Read more...</el-button>
+        </span>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters, mapActions } from "vuex"; // Import Vuex helpers
+
 export default {
   name: "BlogPostPreview",
-  mounted() {
-    this.loadThePosts();
+  async created() {
+    // Call the Vuex action to set posts when the component is created
+    await this.setPosts();
   },
-  data() {
-    return {
-      loadedPosts: [],
-    };
+  computed: {
+    ...mapGetters({
+      loadedPosts: "loadedPosts", // Map the loadedPosts getter from Vuex
+    }),
   },
   methods: {
-    async loadThePosts() {
-      this.$axios
-        .get(
-          "https://nuxt-portfolio-blog-default-rtdb.firebaseio.com/posts.json"
-        )
-        .then((res) => {
-          let data = res.data;
-          Object.keys(data).forEach((key) => {
-            this.loadedPosts.push(data[key]);
-          });
-        })
-        .catch((err) => console.log(err, "unsuccessful API call"));
+    ...mapActions(["setPosts"]), // Map the setPosts action from Vuex to component methods
+    truncateText(text, maxLength) {
+      if (text.length > maxLength) {
+        return text.substring(0, maxLength) + "...";
+      }
+      return text;
     },
   },
 };
@@ -47,12 +50,9 @@ export default {
 <style scoped>
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(410px, 1fr)
-  ); /* Adjust min width as needed */
-  gap: 20px; /* Space between grid items */
-  padding: 20px; /* Padding around the grid */
+  grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .blog-preview-card {

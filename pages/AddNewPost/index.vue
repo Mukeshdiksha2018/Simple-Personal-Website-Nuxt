@@ -76,6 +76,7 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from "vuex";
 export default {
   data() {
     return {
@@ -88,6 +89,7 @@ export default {
     };
   },
   methods: {
+    ...mapActions(["setPosts"]),
     handleSubmit() {
       this.$refs.blogForm.validate((valid) => {
         if (valid) {
@@ -100,6 +102,7 @@ export default {
             .then((result) => console.log(result))
             .catch((err) => console.log(err));
           this.formData = {};
+          this.setPosts();
           this.$router.push("/Blog/");
         } else {
           console.log("Error: Form is not valid!");
