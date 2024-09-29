@@ -100,7 +100,7 @@ p {
 
 .contact-form-container {
   background: #f7f9fb;
-  padding: 20px;
+  padding: 20px 30px 20px 10px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
