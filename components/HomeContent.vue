@@ -2,7 +2,7 @@
   <div>
     <div class="main-container">
       <div class="home-page">
-        <h1>{{ fullName }}</h1>
+        <h1>Hello I'm {{ fullName }}</h1>
         <p>{{ profession }}</p>
         <span class="introduction">
           <h2>Skilled in:</h2>
@@ -44,7 +44,7 @@ export default {
   layout: "default",
   data() {
     return {
-      fullName: "Akkala Sai Mukesh Kumar",
+      fullName: "Mukesh Kumar",
       profession: "Full Stack Software Developer",
     };
   },
