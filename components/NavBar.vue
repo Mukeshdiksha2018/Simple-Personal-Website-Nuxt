@@ -12,16 +12,13 @@
         <nuxt-link to="/about">About</nuxt-link>
       </li>
       <li class="nav-item" @click="closeNav">
-        <nuxt-link to="/experience">Experience/Education/Skills</nuxt-link>
-      </li>
-      <li class="nav-item" @click="closeNav">
-        <nuxt-link to="/contact">Contact</nuxt-link>
+        <nuxt-link to="/experience">Experience|Education</nuxt-link>
       </li>
       <li class="nav-item" @click="closeNav">
         <nuxt-link to="/blog">Blog</nuxt-link>
       </li>
       <li class="nav-item" @click="closeNav">
-        <nuxt-link to="/Admin">Admin</nuxt-link>
+        <nuxt-link to="/Admin">Admin Area</nuxt-link>
       </li>
     </ul>
   </nav>
