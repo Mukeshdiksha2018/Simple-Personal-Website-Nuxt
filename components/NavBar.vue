@@ -49,7 +49,15 @@ export default {
 <style scoped>
 /* Navbar container */
 .navbar {
-  background-color: #2a182e;
+  background: rgb(0, 196, 204);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 196, 204, 1) 0%,
+    rgba(71, 109, 220, 1) 30%,
+    rgba(88, 88, 224, 1) 59%,
+    rgba(116, 52, 230, 1) 81%,
+    rgba(125, 42, 232, 1) 100%
+  );
   padding: 1rem 0;
   position: fixed;
   top: 0;
@@ -92,13 +100,13 @@ export default {
 
 .nav-item a:active {
   color: #ffffff;
-  background-color: #f9a619;
+  background-color: #3b85db;
   border-radius: 20px;
 }
 
 .nav-item a.nuxt-link-active {
   color: #ffffff;
-  background-color: #f9a619;
+  background-color: #3b85db;
   border-radius: 20px;
 }
 
