@@ -70,28 +70,27 @@ export default {
           position: "Software Engineer",
           period: "Nov 2021 - Currently working..",
           description:
-            "Developing a no-code platform and document signing system using Vue.js and Nuxt.js.",
+            "Developing a no-code platform and document signing system using Vue.js and Nuxt.js. My responsibilities include actively participating in code reviews, debugging and developing new functionalities.",
         },
         {
           company: "Lavu INC",
           position: "Configuration & On-boarding Executive",
           period: "Jan 2020 - Nov 2021",
           description:
-            "Developing a no-code platform and document signing system using Vue.js and Nuxt.js.",
+            "Worked on configuration and onboarding clients for this restaurant POS service provider",
         },
         {
           company: "Genpact",
           position: "Collections Executive",
           period: "Nov 2018 - Aug 2019",
           description:
-            "Developing a no-code platform and document signing system using Vue.js and Nuxt.js.",
+            "Did credit card collections for Synchrony, which is a leading financial institution in USA",
         },
         {
           company: "Concentrix",
           position: "Customer Service Representative",
           period: "Mar 2017 - May 2018",
-          description:
-            "Built dynamic user interfaces with Vue.js and improved user experience.",
+          description: "worked here as a customer service executive.",
         },
       ],
       educationHistory: [
