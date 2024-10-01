@@ -32,6 +32,10 @@ export default {
     '@/plugins/element-ui'
   ],
 
+  env: {
+    fbAPIKey: 'AIzaSyA1tE7uDe3yFiji4Gj1XqP26zSlsV4PsNo'
+  },
+
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
