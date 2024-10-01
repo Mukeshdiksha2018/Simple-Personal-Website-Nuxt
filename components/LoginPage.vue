@@ -94,6 +94,10 @@ export default {
   align-items: center;
   height: 90vh;
   background-color: #f0f2f5;
+  background-image: url("~assets/images/adminpageblob.svg");
+  background-repeat: no-repeat;
+  background-position: center; /* Centers the background image */
+  background-size: 55%;
 }
 
 .login-card {
@@ -105,5 +109,32 @@ export default {
   text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f0f2f5;
+    background-image: url("~assets/images/adminpageblob.svg");
+    background-repeat: no-repeat;
+    background-position: center; /* Centers the background image */
+    background-size: 145%;
+  }
+  /* 
+  .login-card[data-v-e0bd9a66] {
+    width: 400px;
+    padding: 20px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url("~assets/images/mobileblog.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  } */
 }
 </style>
