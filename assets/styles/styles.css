@@ -11,7 +11,6 @@ body {
 }
 
 h1,
-h3,
 h2,
 h4,
 h5,
@@ -19,6 +18,10 @@ h6 {
   font-family: "Poppins", sans-serif; /* Stylish font for headers */
   margin-bottom: 1.2rem; /* Space between header and content */
   color: #424242; /* Slightly darker than body text */
+}
+
+h3{
+  color: #EB3669;
 }
 
 p {
@@ -57,4 +60,11 @@ pre {
   color: #FFF;
   background-color: #48CFCB;
   border-color: #48CFCB;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
