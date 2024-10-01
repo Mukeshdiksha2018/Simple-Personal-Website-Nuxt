@@ -70,18 +70,9 @@ export default {
   },
   methods: {
     onSubmit() {
-      this.$refs.loginForm.validate((valid) => {
-        if (valid) {
-          this.loading = true;
-          setTimeout(() => {
-            this.$message.success("Login successful!");
-            this.loading = false;
-            // Proceed with actual login action here
-          }, 2000);
-        } else {
-          this.$message.error("Please fix the errors in the form.");
-        }
-      });
+      this.$store
+        .dispatch("authenticateUser", this.form)
+        .then(() => this.$router.push("/editblogposts"));
     },
   },
 };
