@@ -118,23 +118,19 @@ export default {
     align-items: center;
     height: 90vh;
     background-color: #f0f2f5;
-    background-image: url("~assets/images/adminpageblob.svg");
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiMwOEJEQkEiIGQ9Ik0zNCwtNDUuNEM0OS44LC0zNS40LDcyLjIsLTMzLjEsNzAuMSwtMjZDNjgsLTE4LjksNDEuNSwtNywzMyw4LjFDMjQuNCwyMy4yLDM0LDQxLjYsMzEuNSw0OC43QzI5LDU1LjksMTQuNSw1MS44LDAuMyw1MS40Qy0xNCw1MS4xLC0yNy45LDU0LjQsLTMzLjYsNDguMkMtMzkuMiw0Mi4xLC0zNi40LDI2LjUsLTQ0LDEyLjJDLTUxLjcsLTIuMiwtNjkuNywtMTUuNCwtNjYuMSwtMTkuOUMtNjIuNCwtMjQuNCwtMzcuMSwtMjAuMywtMjIuNSwtMzAuN0MtNy45LC00MS4xLC0zLjksLTY2LDIuNiwtNjkuNkM5LjEsLTczLjIsMTguMiwtNTUuNCwzNCwtNDUuNFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCAxMDApIiAvPgo8L3N2Zz4K);
     background-repeat: no-repeat;
-    background-position: center; /* Centers the background image */
-    background-size: 145%;
+    background-position: center;
+    background-size: 230%;
   }
-  /* 
+
   .login-card[data-v-e0bd9a66] {
     width: 400px;
     padding: 20px;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    background-image: url("~assets/images/mobileblog.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  } */
+  }
 }
 </style>
