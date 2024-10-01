@@ -129,7 +129,6 @@ export default {
 
 h3 {
   font-weight: bold;
-  color: #eb3669;
 }
 
 h4 {
