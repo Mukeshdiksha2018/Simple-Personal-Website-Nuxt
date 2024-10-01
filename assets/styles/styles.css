@@ -21,10 +21,6 @@ h6 {
   color: #424242; /* Slightly darker than body text */
 }
 
-h3{
-  background-color: cornsilk;
-}
-
 p {
   margin-bottom: 1rem; /* Adds space between paragraphs */
   margin-left: 1rem;
@@ -59,8 +55,8 @@ pre {
 
 .el-button--primary {
   color: #FFF;
-  background-color: #48CFCB;
-  border-color: #48CFCB;
+  background-color: #7D2BE8;
+  border-color: #7D2BE8;
 }
 
 .fade-enter-active, .fade-leave-active {

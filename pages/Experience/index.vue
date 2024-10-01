@@ -4,7 +4,9 @@
       <!-- Work Experience -->
       <el-col :xs="24" :sm="24" :md="12" :lg="8">
         <el-card shadow="always">
-          <h3>Work Experience</h3>
+          <span class="center-text">
+            <h3>Work Experience</h3>
+          </span>
           <el-timeline>
             <el-timeline-item
               v-for="(job, index) in workExperience"
@@ -23,7 +25,9 @@
       <!-- Education -->
       <el-col :xs="24" :sm="24" :md="12" :lg="8">
         <el-card shadow="always">
-          <h3>Education</h3>
+          <span class="center-text">
+            <h3>Education</h3>
+          </span>
           <el-timeline>
             <el-timeline-item
               v-for="(education, index) in educationHistory"
@@ -42,7 +46,9 @@
       <!-- Skills -->
       <el-col :xs="24" :sm="24" :md="24" :lg="8">
         <el-card shadow="always">
-          <h3>Skills</h3>
+          <span class="center-text">
+            <h3>Skills</h3>
+          </span>
           <div class="skills">
             <el-tag
               v-for="(skill, index) in skills"
@@ -142,6 +148,14 @@ h4 {
   margin: 5px;
 }
 
+.center-text {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  background-color: cornsilk;
+}
 /* Media queries for mobile responsiveness */
 @media only screen and (max-width: 768px) {
   .profile-section {
