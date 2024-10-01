@@ -49,7 +49,7 @@ export default {
 <style scoped>
 /* Navbar container */
 .navbar {
-  background-color: #229799;
+  background-color: #2a182e;
   padding: 1rem 0;
   position: fixed;
   top: 0;
@@ -79,26 +79,26 @@ export default {
 }
 
 .nav-item a {
-  color: #0f172a;
+  color: white;
   text-decoration: none;
   padding: 0.5rem;
 }
 
 .nav-item a:hover {
   color: #ffffff;
-  background-color: #0f172a;
+  background-color: #3b85db;
   border-radius: 20px;
 }
 
 .nav-item a:active {
   color: #ffffff;
-  background-color: #0f172a;
+  background-color: #f9a619;
   border-radius: 20px;
 }
 
 .nav-item a.nuxt-link-active {
   color: #ffffff;
-  background-color: #0f172a;
+  background-color: #f9a619;
   border-radius: 20px;
 }
 
@@ -130,7 +130,7 @@ export default {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #229799;
+    background-color: #2a182e;
     display: none;
     flex-direction: column;
     align-items: center;

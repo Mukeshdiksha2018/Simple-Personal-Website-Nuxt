@@ -65,6 +65,17 @@ export default {
 .blog-preview-card:hover {
   transform: translateY(-5px);
 }
+
+@media (max-width: 768px) {
+  .blog-preview-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s ease;
+    width: 90vw;
+  }
+}
 .blog-content {
   padding: 15px;
 }
