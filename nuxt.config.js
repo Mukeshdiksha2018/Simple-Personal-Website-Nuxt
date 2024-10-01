@@ -51,5 +51,13 @@ export default {
   transition: {
     name: 'fade',
     mode: 'out-in'
+  },
+  'google-gtag': {
+    id: 'G-LN72CJCKYH', // Your Google Analytics ID
+    debug: true, // Enable to track in development
+    config: {
+      anonymize_ip: true, // Anonymizes IP addresses
+      send_page_view: true, // Manually send page views
+    }
   }
 }
