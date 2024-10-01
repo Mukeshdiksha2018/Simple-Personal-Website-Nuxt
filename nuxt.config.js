@@ -40,7 +40,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/axios'],
+  modules: ['@nuxtjs/axios','@nuxtjs/google-gtag'],
   axios: {
     baseURL: 'https://nuxt-portfolio-blog-default-rtdb.firebaseio.com/', // base URL for Firebase
   },
