@@ -8,16 +8,16 @@
     </div>
     <!-- Navigation links -->
     <ul class="nav-links" :class="{ active: showMenu }">
-      <li class="nav-item" @click="closeNav">
+      <li class="nav-item" @click="closeNav('/about')">
         <nuxt-link to="/about">About</nuxt-link>
       </li>
-      <li class="nav-item" @click="closeNav">
+      <li class="nav-item" @click="closeNav('/experience')">
         <nuxt-link to="/experience">Experience|Education</nuxt-link>
       </li>
-      <li class="nav-item" @click="closeNav">
-        <nuxt-link to="/blog">Blog</nuxt-link>
+      <li class="nav-item" @click="closeNav('/portfolio')">
+        <nuxt-link to="/portfolio">Portfolio</nuxt-link>
       </li>
-      <li class="nav-item" @click="closeNav">
+      <li class="nav-item" @click="closeNav('/Admin')">
         <nuxt-link to="/Admin">Admin Area</nuxt-link>
       </li>
     </ul>
@@ -40,8 +40,9 @@ export default {
     toggleNav() {
       this.showMenu = !this.showMenu;
     },
-    closeNav() {
+    closeNav(route) {
       this.showMenu = false;
+      this.$router.push(route);
     },
   },
 };
