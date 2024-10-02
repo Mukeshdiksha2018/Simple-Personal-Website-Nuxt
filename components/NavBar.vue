@@ -8,16 +8,16 @@
     </div>
     <!-- Navigation links -->
     <ul class="nav-links" :class="{ active: showMenu }">
-      <li class="nav-item" @click="closeNav('/about')">
+      <li class="nav-item" @click="closeNav">
         <nuxt-link to="/about">About</nuxt-link>
       </li>
-      <li class="nav-item" @click="closeNav('/experience')">
+      <li class="nav-item" @click="closeNav">
         <nuxt-link to="/experience">Experience|Education</nuxt-link>
       </li>
-      <li class="nav-item" @click="closeNav('/portfolio')">
+      <li class="nav-item" @click="closeNav">
         <nuxt-link to="/portfolio">Portfolio</nuxt-link>
       </li>
-      <li class="nav-item" @click="closeNav('/Admin')">
+      <li class="nav-item" @click="closeNav">
         <nuxt-link to="/Admin">Admin Area</nuxt-link>
       </li>
     </ul>
