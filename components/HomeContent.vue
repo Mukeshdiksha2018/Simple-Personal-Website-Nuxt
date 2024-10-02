@@ -7,7 +7,7 @@
         <p>{{ profession }}</p>
         <span class="introduction">
           <h2>Skilled in:</h2>
-          <p>Vue 2, Vue 3, Nuxt 2, Nuxt 3, Node, JavaScript, Typescript</p>
+          <p>Vue 2, Vue 3, Nuxt 2, Nuxt 3, Node, JavaScript, TypeScript</p>
         </span>
       </div>
       <div>
@@ -15,26 +15,24 @@
       </div>
     </div>
     <div class="about-me">
-      <h2>About me:</h2>
+      <h2>About Me:</h2>
       <p>
-        I am a passionate Vue.js and Nuxt.js developer with over three years of
-        experience, specializing in building intuitive web applications. Since
-        2021, I’ve been deeply involved in developing a no-code and document
-        signing platform, driving innovation in simplifying workflows and
-        enhancing user experiences.
+        As a passionate Full Stack Software Developer specializing in Vue.js and Nuxt.js, I bring over three years of experience in creating intuitive and high-performing web applications. Since 2021, I have been dedicated to building a no-code and document signing platform, focusing on simplifying workflows and enhancing user experiences.
       </p>
       <p>
-        I leverage powerful libraries such as Vuex for state management, Vue
-        Router for seamless navigation, and Element UI for elegant user
-        interfaces. Additionally, I use Axios to handle API interactions
-        efficiently, ensuring high performance and scalability. My focus is on
-        creating dynamic, responsive applications that align with modern web
-        development trends.
+        My technical expertise encompasses:
+        <ul>
+          <li><strong>Vue 2 & Vue 3</strong>: Crafting dynamic and responsive user interfaces.</li>
+          <li><strong>Nuxt 2 & Nuxt 3</strong>: Building efficient server-side rendered applications.</li>
+          <li><strong>Node.js</strong>: Developing scalable backend services.</li>
+          <li><strong>JavaScript & TypeScript</strong>: Ensuring robust and maintainable code.</li>
+        </ul>
       </p>
       <p>
-        When I’m not coding, I enjoy exploring new technologies and contributing
-        to projects that push the boundaries of web development. Let's build
-        something amazing together!
+        I leverage powerful libraries such as Vuex for state management, Vue Router for seamless navigation, and Element UI for creating elegant user interfaces. Additionally, I use Axios to handle API interactions efficiently, ensuring high performance and scalability. My focus is on creating dynamic, responsive applications that align with modern web development trends.
+      </p>
+      <p>
+        When I’m not coding, I enjoy exploring new technologies and contributing to projects that push the boundaries of web development. Let's connect and build something amazing together!
       </p>
     </div>
   </div>
@@ -82,6 +80,11 @@ export default {
   padding: 20px;
 }
 
+.about-me ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Indentation for list items */
+}
+
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.5s; /* Change to speed up or slow down */
@@ -97,7 +100,7 @@ export default {
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
   20% {
     transform: rotate(-8deg);
   }
@@ -112,7 +115,7 @@ export default {
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
   100% {
     transform: rotate(0deg);
   }

@@ -72,7 +72,7 @@ export default {
     onSubmit() {
       this.$store
         .dispatch("authenticateUser", this.form)
-        .then(() => this.$router.push("/editblogposts"));
+        .then(() => this.$router.push("/editportfolio"));
     },
   },
 };
