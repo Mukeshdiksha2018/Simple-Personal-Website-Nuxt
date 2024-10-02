@@ -33,7 +33,7 @@ export default {
   ],
 
   env: {
-    fbAPIKey: 'AIzaSyA1tE7uDe3yFiji4Gj1XqP26zSlsV4PsNo'
+    fbAPIKey:  process.env.NUXT_FIREBASE_API_KEY
   },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
