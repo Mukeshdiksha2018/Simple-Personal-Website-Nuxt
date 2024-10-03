@@ -14,6 +14,43 @@
         <img class="image" src="~/assets/images/mukeshphoto.jpg" />
       </div>
     </div>
+    <div class="logos">
+      <img
+        class="each-logo"
+        height="100px"
+        width="100px"
+        src="~/assets/images/logo-green-black.svg"
+        alt="nuxt-logo"
+      />
+      <img
+        class="each-logo"
+        height="50px"
+        width="50px"
+        src="~/assets/images/vue-9-logo-svgrepo-com.svg"
+        alt="vue-logo"
+      />
+      <img
+        class="each-logo"
+        height="50px"
+        width="50px"
+        src="~/assets/images/nodejs-1-logo-svgrepo-com.svg"
+        alt=""
+      />
+      <img
+        class="each-logo"
+        height="50px"
+        width="50px"
+        src="~/assets/images/mongodb-svgrepo-com.svg"
+        alt=""
+      />
+      <img
+        class="each-logo"
+        height="50px"
+        width="50px"
+        src="~/assets/images/firebase-svgrepo-com.svg"
+        alt=""
+      />
+    </div>
     <div class="about-me">
       <h2>About Me:</h2>
       <p>
@@ -111,6 +148,25 @@ export default {
   font-size: 3rem;
 }
 
+.logos {
+  width: 60vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.each-logo {
+  transition: transform 0.5s ease;
+}
+.each-logo:hover {
+  transform: scale(1.09);
+}
+
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
@@ -157,6 +213,21 @@ export default {
 
   .about-me {
     padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logos {
+    width: 98vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
 </style>

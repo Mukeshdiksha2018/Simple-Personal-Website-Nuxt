@@ -18,6 +18,9 @@
         <nuxt-link to="/portfolio">Portfolio</nuxt-link>
       </li>
       <li class="nav-item" @click="closeNav">
+        <nuxt-link to="/Contact">Contact</nuxt-link>
+      </li>
+      <li class="nav-item" @click="closeNav">
         <nuxt-link to="/Admin">Admin Area</nuxt-link>
       </li>
     </ul>
