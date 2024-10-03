@@ -71,7 +71,7 @@ export default {
   methods: {
     onSubmit() {
       this.$store
-        .dispatch("authenticateUser", this.form)
+        .dispatch("auth/authenticateUser", this.form) // 'auth' is the namespace of the module
         .then(() => this.$router.push("/EditPortfolio"));
     },
   },
