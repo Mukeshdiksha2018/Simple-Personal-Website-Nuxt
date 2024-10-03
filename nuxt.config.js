@@ -13,7 +13,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/DarkerLogo.png' } //this path next to href refers directly to static folder.
+      { rel: 'icon', type: 'image/x-icon', href: '/MukeshCodesLogo.svg' } //this path next to href refers directly to static folder.
     ]
   },
   loading:{color: '#F97F33',height: '5px',duration: 5000},

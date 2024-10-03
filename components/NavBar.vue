@@ -1,29 +1,42 @@
 <template>
   <nav class="navbar" ref="navbar">
     <!-- Hamburger icon for mobile view -->
-    <div class="hamburger" @click="toggleNav">
+    <span class="hamburger" @click="toggleNav">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
-    </div>
+    </span>
     <!-- Navigation links -->
-    <ul class="nav-links" :class="{ active: showMenu }">
-      <li class="nav-item" @click="closeNav">
-        <nuxt-link to="/about">About</nuxt-link>
-      </li>
-      <li class="nav-item" @click="closeNav">
-        <nuxt-link to="/experience">Experience|Education</nuxt-link>
-      </li>
-      <li class="nav-item" @click="closeNav">
-        <nuxt-link to="/portfolio">Portfolio</nuxt-link>
-      </li>
-      <li class="nav-item" @click="closeNav">
-        <nuxt-link to="/Contact">Contact</nuxt-link>
-      </li>
-      <li class="nav-item" @click="closeNav">
-        <nuxt-link to="/Admin">Admin Area</nuxt-link>
-      </li>
-    </ul>
+    <el-row>
+      <el-col :span="12">
+        <img
+          width="35px"
+          height="35px"
+          style="margin-left: 2rem"
+          src="/MukeshCodesLogo.svg"
+          alt="logo"
+        />
+      </el-col>
+      <el-col :span="12">
+        <ul class="nav-links" :class="{ active: showMenu }">
+          <li class="nav-item" @click="closeNav">
+            <nuxt-link to="/about">About</nuxt-link>
+          </li>
+          <li class="nav-item" @click="closeNav">
+            <nuxt-link to="/experience">Experience|Education</nuxt-link>
+          </li>
+          <li class="nav-item" @click="closeNav">
+            <nuxt-link to="/portfolio">Portfolio</nuxt-link>
+          </li>
+          <li class="nav-item" @click="closeNav">
+            <nuxt-link to="/Contact">Contact</nuxt-link>
+          </li>
+          <li class="nav-item" @click="closeNav">
+            <nuxt-link to="/Admin">Admin Area</nuxt-link>
+          </li>
+        </ul>
+      </el-col>
+    </el-row>
   </nav>
 </template>
 <script>
