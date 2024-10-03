@@ -8,8 +8,9 @@
     </span>
     <!-- Navigation links -->
     <el-row>
-      <el-col :span="12">
+      <el-col :span="6">
         <img
+          v-if="!isMobile"
           width="35px"
           height="35px"
           style="margin-left: 2rem"
@@ -17,7 +18,7 @@
           alt="logo"
         />
       </el-col>
-      <el-col :span="12">
+      <el-col :span="18">
         <ul class="nav-links" :class="{ active: showMenu }">
           <li class="nav-item" @click="closeNav">
             <nuxt-link to="/about">About</nuxt-link>
@@ -40,6 +41,7 @@
   </nav>
 </template>
 <script>
+import screenSizeMixin from "~/mixins/screenSizeMixin";
 export default {
   data() {
     return {
@@ -47,6 +49,7 @@ export default {
       showMenu: false, // To toggle the menu on mobile
     };
   },
+  mixins: [screenSizeMixin],
   mounted() {
     setTimeout(() => {
       this.$refs.navbar.classList.add("slide-down");
@@ -155,7 +158,7 @@ export default {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #2a182e;
+    background-color: antiquewhite;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -164,6 +167,7 @@ export default {
   .nav-links.active {
     display: flex;
     margin-left: -35px;
+    margin-top: 15px;
   }
 
   .nav-item {
@@ -176,6 +180,8 @@ export default {
 
   .nav-item a {
     width: 100%;
+    background-color: antiquewhite;
+    color: black;
   }
 }
 </style>
