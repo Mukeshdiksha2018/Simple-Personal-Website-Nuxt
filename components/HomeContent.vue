@@ -2,7 +2,7 @@
   <div>
     <div class="main-container">
       <div class="home-page">
-        <span class="wave">👋</span>
+        <span v-if="!isMobile" class="wave">👋</span>
         <h1>Hello I'm {{ fullName }}</h1>
         <p>{{ profession }}</p>
         <span class="introduction">
@@ -98,6 +98,8 @@
 </template>
 
 <script>
+import screenSizeMixin from "~/mixins/screenSizeMixin";
+
 export default {
   layout: "default",
   data() {
@@ -106,6 +108,7 @@ export default {
       profession: "Full Stack Software Developer",
     };
   },
+  mixins: [screenSizeMixin],
 };
 </script>
 
@@ -228,6 +231,13 @@ export default {
     align-items: center;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: -0.9rem;
+  }
+
+  .image {
+    height: 10rem;
+    width: 10rem;
   }
 }
 </style>
