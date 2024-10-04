@@ -1,96 +1,57 @@
 <template>
-  <div class="contact-container">
-    <h1>Contact Me</h1>
-    <el-form :model="form" :rules="rules" ref="contactForm">
-      <el-form-item label="Name" prop="name">
-        <el-input v-model="form.name" placeholder="Your Name" />
-      </el-form-item>
+  <div class="wrapper">
+    <div style="width: 50vw">
+      <div class="links-container">
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/sai-mukesh-kumar-akkala-8469b6200/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            height="50px"
+            width="50px"
+            src="~/assets/images/Linkedin.svg"
+            alt="linkedin-logo"
+          />
+        </a>
+        <a href="mailto:mukeshdiksha2018@gmail.com">
+          <img
+            height="50px"
+            width="50px"
+            src="~/assets/images/email.svg"
+            alt="email-logo"
+          />
+        </a>
 
-      <el-form-item label="Email" prop="email">
-        <el-input v-model="form.email" placeholder="Your Email" />
-      </el-form-item>
-
-      <el-form-item label="Message" prop="message">
-        <el-input
-          type="textarea"
-          v-model="form.message"
-          placeholder="Your Message"
-        />
-      </el-form-item>
-
-      <el-form-item>
-        <el-button type="primary" @click="submitForm">Submit</el-button>
-      </el-form-item>
-    </el-form>
+        <!-- GitHub -->
+        <a
+          href="https://github.com/Mukeshdiksha2018"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            height="50px"
+            width="50px"
+            src="~/assets/images/github-mark.svg"
+            alt="github-logo"
+          />
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      form: {
-        name: "",
-        email: "",
-        message: "",
-      },
-      rules: {
-        name: [
-          {
-            required: true,
-            message: "Please input your name",
-            trigger: "blur",
-          },
-        ],
-        email: [
-          {
-            required: true,
-            message: "Please input your email",
-            trigger: "blur",
-          },
-          {
-            type: "email",
-            message: "Please input a valid email address",
-            trigger: ["blur", "change"],
-          },
-        ],
-        message: [
-          {
-            required: true,
-            message: "Please input your message",
-            trigger: "blur",
-          },
-        ],
-      },
-    };
-  },
-  methods: {
-    submitForm() {
-      this.$refs.contactForm.validate((valid) => {
-        if (valid) {
-          // Handle form submission
-          console.log("Form submitted:", this.form);
-          // Reset the form
-          this.$refs.contactForm.resetFields();
-        } else {
-          console.error("Error in form submission");
-          return false;
-        }
-      });
-    },
-  },
-};
+export default {};
 </script>
 
 <style scoped>
-.contact-container {
-  max-width: 600px;
-  margin: 10% 30%; /* Adjusted margin for better spacing */
-  padding: 20px;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10% 25%;
 }
 
 h1 {
@@ -102,29 +63,33 @@ h1 {
   margin-bottom: 15px;
 }
 
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 600px) {
-  .contact-container {
-    padding: 15px; /* Reduce padding on mobile */
-    margin: 25% 0; /* Adjust margin for better spacing */
-  }
-
   h1 {
-    font-size: 24px; /* Smaller header font size for mobile */
+    font-size: 24px;
   }
 
   .el-form-item {
-    margin-bottom: 10px; /* Reduced margin on mobile */
+    margin-bottom: 10px;
   }
 
   .el-button {
-    width: 100%; /* Full-width button on mobile */
-    padding: 10px; /* Larger padding for easier tap */
+    width: 100%;
+    padding: 10px;
   }
 
   .el-input,
   .el-input__inner {
-    font-size: 14px; /* Adjust input font size for readability */
+    font-size: 14px;
   }
 }
 </style>
